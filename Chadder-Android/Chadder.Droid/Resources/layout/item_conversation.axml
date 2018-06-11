@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:descendantFocusability="blocksDescendants">
+    <ImageView
+        android:id="@+id/conversationPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_default_face" />
+    <ImageView
+        android:id="@+id/conversation_new"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chadder_icon" />
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_toRightOf="@id/conversationPic"
+        android:layout_alignTop="@id/conversationPic"
+        android:text="Name"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_toLeftOf="@id/conversation_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display_name"
+        android:layout_toRightOf="@id/conversationPic"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/conversation_time"
+            android:text="14:00 PM "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/conversation_lastmsg"
+            android:text="Hello How are you doing??????"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@id/conversation_time"
+            android:layout_centerHorizontal="false" />
+    </RelativeLayout>
+</RelativeLayout>

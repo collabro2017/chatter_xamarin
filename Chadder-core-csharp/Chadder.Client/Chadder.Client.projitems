@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>5e2aa9de-6e5e-43c5-8991-ed53c343c26a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Chadder.Client</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderContact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderConversation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderDatabaseImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderLocalDeviceInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderLocalUserInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderLocalUserRecord.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderPicture.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ChadderUserDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceAccount.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceChat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceContact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceMedia.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourcePackage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderSourceProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Source\ChadderUrls.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQL\ChadderSQLMainDB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQL\ChadderSQLUserDB.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SQL\SQLiteAsync.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ChadderHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ChadderRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ExponentialBackoff.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ChadderFilteredCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\MyNotifyChanged.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ChadderObservableCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\ChadderOrderedCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\SignalRConnection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\SQLDatabase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\UIThread.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Util\XamarinInsight.cs" />
+  </ItemGroup>
+</Project>

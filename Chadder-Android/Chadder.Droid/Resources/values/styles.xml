@@ -1,0 +1,53 @@
+<resources>
+
+  <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+
+  <style name="Theme.AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <!--
+			Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here. -->
+
+  </style>
+
+  <!-- Application theme.  -->
+  <style name="Theme.AppTheme" parent="Theme.AppBaseTheme">
+    <!--  All customizations that are NOT specific to a particular API-level can go here.  -->
+    <item name="android:actionBarStyle">@style/MyActionBar</item>
+
+    <!-- Support library compatibility -->
+
+    <!-- Support library compatibility -->
+    <item name="actionBarStyle">@style/MyActionBar</item>
+  </style>
+
+  <style name="Theme.NoTitleBar"
+           parent="Theme.AppTheme">
+    <item name="android:windowActionBar">false</item>
+    <item name="android:windowNoTitle">true</item>
+  </style>
+
+  <style name="TransparentActionBar"
+    parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <item name="android:background">#A0000000</item>
+  </style>
+
+  <style name="MyActionBar" parent="@style/Widget.AppCompat.ActionBar">
+    <item name="android:background">@color/chadderred</item>
+    <item name="background">@color/chadderred</item>
+  </style>
+
+  <!--  ChadderCustomStyles -->
+  <style name="LoadingIndicator" parent="@android:style/Widget.DeviceDefault.Light.ProgressBar.Inverse">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:indeterminate">true</item>
+    <item name="android:indeterminateOnly">true</item>
+    <item name="android:layout_centerInParent">true</item>
+    <item name="android:visibility">gone</item>
+  </style>
+</resources>

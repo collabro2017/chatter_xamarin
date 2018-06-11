@@ -1,0 +1,12 @@
+sqlite-net-wp8/ARM/
+sqlite-net-wp8/Debug/
+ChadderLib.Dos/obj/
+ChadderLib.Dos/bin/
+ChadderLib.Droid/obj/
+ChadderLib.WP8/Bin/
+ChadderLib.Droid/bin/
+ChadderLib.WP8/obj/
+Chadder.Client.Test/bin/
+Chadder.Client.Test/obj/
+ChadderLib.Droid/Resources/Resource.Designer.cs
+grep.exe.stackdump

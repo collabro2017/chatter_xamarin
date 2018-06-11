@@ -1,0 +1,92 @@
+<resources>
+  <style name="Profile_DivisionLines">
+    <item name="android:layout_height">2dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">@color/chadderred</item>
+  </style>
+
+  <style name="Profile_DivisionLinesSmall">
+    <item name="android:layout_height">1dp</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:background">@android:color/darker_gray</item>
+  </style>
+
+  <style name="Profile_DivisionLabel">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:layout_marginLeft">10dp</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:textColor">@color/chadderred</item>
+  </style>
+
+  <style name="Profile_ButtonLayer">
+    <item name="android:layout_height">60dp</item>
+    <item name="android:layout_width">match_parent</item>
+  </style>
+
+  <style name="Profile_Option">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textColor">@color/default_foreground</item>
+    <item name="android:textSize">16dp</item>
+    <item name="android:gravity">left|top</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingLeft">20dp</item>
+  </style>
+
+  <style name="Profile_Button" parent="Profile_Option">
+    <item name="android:background">@drawable/transparent_button</item>
+  </style>
+
+  <style name="Profile_ButtonNoContentNoGravity">
+    <item name="android:layout_height">match_parent</item>
+    <item name="android:layout_width">match_parent</item>
+    <item name="android:textColor">@color/default_foreground</item>
+    <item name="android:gravity">left</item>
+    <item name="android:paddingTop">10dp</item>
+    <item name="android:paddingBottom">10dp</item>
+    <item name="android:paddingRight">10dp</item>
+    <item name="android:paddingLeft">20dp</item>
+    <item name="android:background">@drawable/transparent_button</item>
+  </style>
+  <style name="Profile_ButtonNoContent" parent="Profile_ButtonNoContentNoGravity">
+    <item name="android:gravity">left</item>
+  </style>
+
+  <style name="Profile_ButtonContent">
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:textColor">@color/foreground_subtle</item>
+    <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    <item name="android:layout_marginBottom">8dp</item>
+    <item name="android:layout_marginLeft">20dp</item>
+    <item name="android:background">@drawable/transparent_button</item>
+    <item name="android:layout_alignParentLeft">true</item>
+    <item name="android:layout_alignParentBottom">true</item>
+  </style>
+
+  <style name="Profile_Picture">
+    <item name="android:layout_height">150dp</item>
+    <item name="android:layout_width">150dp</item>
+    <item name="android:layout_marginTop">20dp</item>
+    <item name="android:layout_gravity">center_horizontal</item>
+    <item name="android:scaleType">centerCrop</item>
+    <item name="android:padding">5dp</item>
+    <item name="android:background">@android:color/transparent</item>
+    <item name="android:src">@drawable/ic_default_face</item>
+  </style>
+
+  <style name="Profile_Pencil">
+    <item name="android:layout_height">40dp</item>
+    <item name="android:layout_width">40dp</item>
+    <item name="android:src">@drawable/pencil</item>
+    <item name="android:layout_alignParentRight">true</item>
+    <item name="android:layout_centerVertical">true</item>
+    <item name="android:layout_marginRight">20dp</item>
+    <item name="android:padding">5dp</item>
+  </style>
+
+</resources>

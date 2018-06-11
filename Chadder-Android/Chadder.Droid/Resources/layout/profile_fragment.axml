@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            style="@style/Profile_Picture"
+            android:id="@+id/profile_picture" />
+    <!--Info Label-->
+        <TextView
+            style="@style/Profile_DivisionLabel"
+            android:text="My Info" />
+        <View
+            style="@style/Profile_DivisionLines" />
+    <!--name button-->
+        <RelativeLayout
+            style="@style/Profile_ButtonLayer">
+            <Button
+                style="@style/Profile_Button"
+                android:id="@+id/profile_name_btn"
+                android:text="Name" />
+            <TextView
+                style="@style/Profile_ButtonContent"
+                android:id="@+id/profile_name_label" />
+            <ImageView
+                style="@style/Profile_Pencil" />
+        </RelativeLayout>
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    <!--Email button-->
+        <RelativeLayout
+            style="@style/Profile_ButtonLayer">
+            <Button
+                style="@style/Profile_Button"
+                android:id="@+id/profile_email_btn"
+                android:text="Email" />
+            <TextView
+                style="@style/Profile_ButtonContent"
+                android:id="@+id/profile_email_label" />
+            <ImageView
+                style="@style/Profile_Pencil" />
+        </RelativeLayout>
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    <!--Phone button-->
+        <RelativeLayout
+            style="@style/Profile_ButtonLayer">
+            <Button
+                style="@style/Profile_Button"
+                android:id="@+id/profile_phone_btn"
+                android:text="@string/ProfilePhone" />
+            <TextView
+                style="@style/Profile_ButtonContent"
+                android:id="@+id/profile_phone_label" />
+            <ImageView
+                style="@style/Profile_Pencil" />
+        </RelativeLayout>
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    <!--Share name button-->
+        <RelativeLayout
+            style="@style/Profile_ButtonLayer">
+            <Button
+                style="@style/Profile_Button"
+                android:id="@+id/profile_sharename_btn"
+                android:text="Public Name" />
+            <TextView
+                style="@style/Profile_ButtonContent"
+                android:id="@+id/profile_sharename_label" />
+            <ImageView
+                style="@style/Profile_Pencil" />
+        </RelativeLayout>
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    <!--Devices label-->
+        <TextView
+            style="@style/Profile_DivisionLabel"
+            android:layout_marginTop="20dp"
+            android:id="@+id/profile_extra_label"
+            android:text="Devices" />
+        <View
+            style="@style/Profile_DivisionLines" />
+        <Chadder.Droid.Views.Account.MyGridView
+            android:id="@+id/profile_devices"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="10dp"
+            android:horizontalSpacing="10dp"
+            android:stretchMode="columnWidth" />
+    <!--Additional buttons label-->
+        <TextView
+            style="@style/Profile_DivisionLabel"
+            android:id="@+id/profile_extra_label"
+            android:text="Extra" />
+        <View
+            style="@style/Profile_DivisionLines" />
+    <!--Additional buttons-->
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_fingerprint_btn"
+            android:text="My Fingerprint" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_scan_btn"
+            android:text="Scan Fingerprint" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    <!--Upload Contacts button-->
+        <RelativeLayout
+            style="@style/Profile_ButtonLayer">
+            <Button
+                style="@style/Profile_Button"
+                android:id="@+id/profile_contactbook_btn"
+                android:text="@string/ProfileContactBook" />
+            <TextView
+                style="@style/Profile_ButtonContent"
+                android:id="@+id/profile_contactbook_label" />
+        </RelativeLayout>
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_facebook_btn"
+            android:text="Share on Facebook" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_device_pwd_btn"
+            android:text="Change device password" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_account_pwd_btn"
+            android:text="Change account password" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/Erase_All_Msgs_btn"
+            android:text="Erase ALL Messages" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+        <Button
+            style="@style/Profile_ButtonNoContent"
+            android:id="@+id/profile_logout_btn"
+            android:gravity="center"
+            android:text="Logout" />
+        <View
+            style="@style/Profile_DivisionLinesSmall" />
+    </LinearLayout>
+</ScrollView>

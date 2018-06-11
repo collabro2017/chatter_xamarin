@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7bd2cee8-8636-4b43-8037-bed877b6a3f1</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>UIHelper</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ChadderUIHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Chat.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contacts.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Device.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)FindContactObservableCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Profile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SplashScreen.cs" />
+  </ItemGroup>
+</Project>

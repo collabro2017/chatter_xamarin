@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:id="@+id/cropBtnsLayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCrop"
+            android:text="Crop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5" />
+        <Button
+            android:text="Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cropBtnCancel"
+            android:layout_weight=".5" />
+    </LinearLayout>
+<!-- TIP: The order in wich the imageview is declared in the XML
+        Determines the "z-index" of the image -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cropBtnsLayer"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/cropimage_layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/ic_default_face"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cropimage_imageview"
+                android:scaleType="fitCenter"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true" />
+            <ImageView
+                android:id="@+id/canvasBottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@color/crop_canvas"
+                android:layout_alignBottom="@id/cropimage_imageview"
+                android:layout_alignLeft="@id/cropimage_imageview"
+                android:layout_alignRight="@id/cropimage_imageview" />
+            <ImageView
+                android:id="@+id/canvasTop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:src="@color/crop_canvas"
+                android:layout_alignTop="@id/cropimage_imageview"
+                android:layout_alignLeft="@id/cropimage_imageview"
+                android:layout_alignRight="@id/cropimage_imageview" />
+            <ImageView
+                android:id="@+id/canvasLeft"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@color/crop_canvas"
+                android:layout_below="@id/canvasTop"
+                android:layout_above="@id/canvasBottom"
+                android:layout_alignLeft="@id/cropimage_imageview" />
+            <ImageView
+                android:id="@+id/canvasRight"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@color/crop_canvas"
+                android:layout_below="@id/canvasTop"
+                android:layout_above="@id/canvasBottom"
+                android:layout_alignRight="@id/cropimage_imageview" />
+            <ImageView
+                android:id="@+id/crop_resizer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@android:drawable/checkbox_off_background"
+                android:adjustViewBounds="true"
+                android:layout_above="@id/canvasBottom"
+                android:layout_toLeftOf="@id/canvasRight" />
+        <!-- Borders -->
+            <View
+                android:id="@+id/crop_border"
+                android:background="@drawable/Border"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/canvasTop"
+                android:layout_above="@id/canvasBottom"
+                android:layout_toRightOf="@id/canvasLeft"
+                android:layout_toLeftOf="@id/canvasRight" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

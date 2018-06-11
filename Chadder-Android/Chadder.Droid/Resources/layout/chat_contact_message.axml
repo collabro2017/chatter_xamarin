@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_contact_msg_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/Chat_Padding_Screen"
+    android:paddingBottom="@dimen/Chat_Margin_Between"
+    android:paddingTop="@dimen/Chat_Margin_Between"
+    android:gravity="top|left"
+    android:descendantFocusability="blocksDescendants">
+    <ImageButton
+        style="@style/ChatMessage_profilePic"
+        android:id="@+id/chat_msg_profilePic"
+        android:src="@drawable/ic_default_face"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent" />
+    <TextView
+        style="@style/ChatMessage_Name"
+        android:layout_marginLeft="@dimen/chat_timer_margin_side"
+        android:layout_alignParentTop="true"
+        android:id="@+id/chat_msg_name"
+        android:text="John"
+        android:layout_toRightOf="@id/chat_msg_profilePic" />
+    <TextView
+        style="@style/ChatMessage_Time"
+        android:layout_alignParentTop="true"
+        android:id="@+id/chat_msg_time"
+        android:text="12:00 AM"
+        android:layout_toRightOf="@id/chat_msg_name" />
+    <View
+        android:id="@+id/chat_msg_arrow"
+        style="@style/ChatMessage_Arrow"
+        android:layout_below="@id/chat_msg_profilePic"
+        android:background="@drawable/message_arrow_contact" />
+    <LinearLayout
+        style="@style/ChatMessage_BubbleLayer"
+        android:id="@+id/chat_msg_layer"
+        android:layout_marginRight="@dimen/Chat_Bubble_Margin_Screen"
+        android:background="@drawable/message_bubble_contact"
+        android:layout_below="@id/chat_msg_arrow">
+        <TextView
+            style="@style/ChatMessage_Content"
+            android:id="@+id/chat_msg_textview"
+            android:text="Hasd asdasdasd asd asd asd as das" />
+        <RelativeLayout
+            style="@style/ChatMessage_MediaLayer"
+            android:id="@+id/chat_media_layer"
+            android:layout_marginRight="@dimen/Chat_Media_Margin_Side">
+            <ImageView
+                style="@style/ChatMessage_Media"
+                android:id="@+id/chat_msg_media"
+                android:scaleType="fitStart" />
+            <ProgressBar
+                style="@style/LoadingIndicator"
+                android:id="@+id/chat_media_loading" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

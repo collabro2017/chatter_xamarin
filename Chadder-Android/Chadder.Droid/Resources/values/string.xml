@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+  <string name="app_name">Chadder</string>
+  <!-- Nav Drawer Menu Items -->
+  <string name="open_drawer">Open Drawer</string>
+  <string name="close_drawer">Close Drawer</string>
+</resources>

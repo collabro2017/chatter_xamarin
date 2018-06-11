@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    android:layout_marginTop="6dp"
+    android:clickable="true"
+    android:minWidth="45dp"
+    android:paddingBottom="8dp">
+    <ImageView
+        android:src="@drawable/ic_faq_more"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:id="@+id/faq_expand_marquee"
+        android:scaleType="fitCenter"
+        android:padding="5dp" />
+    <TextView
+        android:text="About us:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_question"
+        style="@android:style/TextAppearance.Large"
+        android:layout_toRightOf="@id/faq_expand_marquee"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:text="Chadder :D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/faq_answer"
+        style="@android:style/TextAppearance.Small"
+        android:linksClickable="true"
+        android:gravity="fill_horizontal"
+        android:layout_below="@id/faq_question"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

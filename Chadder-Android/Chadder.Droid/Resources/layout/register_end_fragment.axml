@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}">
+    <TextView
+        style="@style/EncodedBackground" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/chadder" />
+        <TextView
+            android:layout_margin="20dp"
+            android:textColor="@color/chadderred"
+            android:text="@string/RegisterComplete"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:text="@string/RegisterShare"
+            android:textColor="@color/chadderred"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textStyle="bold" />
+        <ImageButton
+            android:id="@+id/register_facebook"
+            android:background="@null"
+            android:layout_margin="10dp"
+            android:padding="0dp"
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/facebook_f"
+            android:scaleType="fitCenter" />
+        <Button
+            android:id="@+id/register_start"
+            style="@style/TourButton"
+            android:background="@drawable/GhostBorder"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_margin="20dp"
+            android:text="@string/RegisterStart" />
+    </LinearLayout>
+</FrameLayout>

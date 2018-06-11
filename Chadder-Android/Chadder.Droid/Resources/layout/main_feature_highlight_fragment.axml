@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/login_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp"
+            android:visibility="invisible"
+            android:src="@drawable/chadder"
+            android:layout_centerInParent="true" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <viewpagerindicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:padding="10dip"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp">
+            <Button
+                android:id="@+id/login"
+                style="@style/TourButton"
+                android:background="@drawable/GhostBorder"
+                android:text="@string/TourLogin" />
+            <Button
+                android:id="@+id/signup"
+                style="@style/TourButton"
+                android:background="@drawable/GhostBorder"
+                android:text="@string/TourRegister" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

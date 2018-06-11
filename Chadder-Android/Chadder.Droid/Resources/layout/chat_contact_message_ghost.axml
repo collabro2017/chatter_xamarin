@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/chat_contact_msg_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/Chat_Padding_Screen"
+    android:paddingBottom="@dimen/Chat_Margin_Between"
+    android:paddingTop="@dimen/Chat_Margin_Between"
+    android:gravity="top|left"
+    android:descendantFocusability="blocksDescendants">
+    <ImageButton
+        style="@style/ChatMessage_profilePic"
+        android:id="@+id/chat_msg_profilePic"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_default_face"
+        android:background="@android:color/transparent" />
+    <RelativeLayout
+        style="@style/ChatMessage_MediaLayer"
+        android:id="@+id/chat_media_layer"
+        android:background="@drawable/GhostBorder"
+        android:layout_marginRight="@dimen/Chat_Media_Margin_Side"
+        android:layout_marginLeft="@dimen/Chat_Bubble_Padding_Pic"
+        android:layout_toRightOf="@id/chat_msg_profilePic">
+        <ImageView
+            style="@style/ChatMessage_profilePic"
+            android:scaleType="centerInside"
+            android:padding="5dp"
+            android:id="@+id/chat_msg_media" />
+        <ProgressBar
+            style="@style/LoadingIndicator"
+            android:id="@+id/chat_media_loading"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

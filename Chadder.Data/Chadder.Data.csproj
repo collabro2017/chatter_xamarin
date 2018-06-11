@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B378E5A8-2413-480A-BB49-0C5615D629B1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chadder.Data</RootNamespace>
+    <AssemblyName>Chadder.Data</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkProfile>Profile259</TargetFrameworkProfile>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Asymmetric\ECDH.cs" />
+    <Compile Include="Asymmetric\ECDHDevice.cs" />
+    <Compile Include="Asymmetric\ECDHUser.cs" />
+    <Compile Include="Base\Content.cs" />
+    <Compile Include="Base\Factory.cs" />
+    <Compile Include="Base\Interfaces.cs" />
+    <Compile Include="Cmd\PairDeviceContent.cs" />
+    <Compile Include="Cmd\TakeMessageBackContent.cs" />
+    <Compile Include="Content\DevicePublicKey.cs" />
+    <Compile Include="Content\ImageContent.cs" />
+    <Compile Include="Content\PlainBinary.cs" />
+    <Compile Include="Content\UserPublicKey.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="Keys\ECDSAKeyPair.cs" />
+    <Compile Include="Keys\ECDSAPublicKey.cs" />
+    <Compile Include="Keys\PrivateKeyBook.cs" />
+    <Compile Include="Keys\PublicKeyBook.cs" />
+    <Compile Include="Messages\BasicMessage.cs" />
+    <Compile Include="Messages\ImageMessage.cs" />
+    <Compile Include="Messages\TextMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\AccountRequests.cs" />
+    <Compile Include="Response\AccountResponse.cs" />
+    <Compile Include="Response\BasicResponse.cs" />
+    <Compile Include="Response\FriendsResponse.cs" />
+    <Compile Include="Sign\ECDSA.cs" />
+    <Compile Include="Symmetric\AES256.cs" />
+    <Compile Include="Symmetric\AES256WithKey.cs" />
+    <Compile Include="Symmetric\AESAbstract.cs" />
+    <Compile Include="Util\CryptoHelper.cs" />
+    <Compile Include="Util\DaraSerializer.cs" />
+    <Compile Include="Util\DataDeserializer.cs" />
+    <Compile Include="Util\Insight.cs" />
+    <Compile Include="Util\SharedUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="crypto">
+      <HintPath>..\packages\Portable.BouncyCastle.1.7.0.2\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch10+MonoAndroid10+xamarinmac20+xamarinios10\crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\portable-net45+wp80+win8+wpa81+dnxcore50\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PhoneNumbers">
+      <HintPath>..\packages\libphonenumber-csharp.7.0.9\lib\PhoneNumbers.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

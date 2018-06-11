@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_id">817972704889743</string>
+  <string name="shared_preferences_file">com.etransfr.chadder.SHARED_PREFERENCES</string>
+  <string name="shared_preferences_version">chadder_version</string>
+  <string name="shared_preferences_gcm_handle">gcm_handle</string>
+  <string name="shared_preferences_last_update">com.etransfr.chadder.LAST_UPDATE</string>
+  <string name="ghost_capture_duration">GhostCaptureDuration</string>
+  <string name="desc_list_item_icon">Item  Icon</string>
+</resources>

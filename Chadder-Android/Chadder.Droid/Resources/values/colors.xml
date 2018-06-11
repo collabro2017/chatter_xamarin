@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <color name="chadderred">#FFEf3e2b</color>
+  <color name="chadderred_transparent">#00Ef3e2b</color>
+  <color name="chadderred_subtle">#80Ef3e2b</color>
+  <color name="item_separator_gray">#AAA</color>
+  <color name="crop_canvas">#80000000</color>
+  <color name="default_foreground">#FF000000</color>
+  <color name="foreground_subtle">#80000000</color>
+  <drawable name="default_background_gray">#EFEFF4</drawable>
+  <drawable name="default_background">#FFFFFF</drawable>
+</resources>

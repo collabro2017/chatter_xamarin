@@ -1,0 +1,54 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chadder.Droid", "Chadder-Android\Chadder.Droid\Chadder.Droid.csproj", "{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chadder.Data", "Chadder.Data\Chadder.Data.csproj", "{B378E5A8-2413-480A-BB49-0C5615D629B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChadderLib.Droid", "Chadder-core-csharp\ChadderLib.Droid\ChadderLib.Droid.csproj", "{DF84762A-30F6-426A-9246-EFC597CC5507}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Chadder.Client", "Chadder-core-csharp\Chadder.Client\Chadder.Client.shproj", "{5E2AA9DE-6E5E-43C5-8991-ED53C343C26A}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UIHelper", "Chadder-core-csharp\UIHelper\UIHelper.shproj", "{7BD2CEE8-8636-4B43-8037-BED877B6A3F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		DebugProduction|Any CPU = DebugProduction|Any CPU
+		Test|Any CPU = Test|Any CPU
+		TestProduction|Any CPU = TestProduction|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.DebugProduction|Any CPU.ActiveCfg = DebugProduction|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.DebugProduction|Any CPU.Build.0 = DebugProduction|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.TestProduction|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}.TestProduction|Any CPU.Build.0 = Debug|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.DebugProduction|Any CPU.ActiveCfg = DebugProduction|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.DebugProduction|Any CPU.Build.0 = DebugProduction|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Test|Any CPU.ActiveCfg = Test|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.Test|Any CPU.Build.0 = Test|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.TestProduction|Any CPU.ActiveCfg = TestProduction|Any CPU
+		{DF84762A-30F6-426A-9246-EFC597CC5507}.TestProduction|Any CPU.Build.0 = TestProduction|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.DebugProduction|Any CPU.ActiveCfg = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.DebugProduction|Any CPU.Build.0 = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Test|Any CPU.ActiveCfg = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.Test|Any CPU.Build.0 = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.TestProduction|Any CPU.ActiveCfg = Debug|Any CPU
+		{B378E5A8-2413-480A-BB49-0C5615D629B1}.TestProduction|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal

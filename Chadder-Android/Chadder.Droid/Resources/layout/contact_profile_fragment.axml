@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contact_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/default_background">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageButton
+                style="@style/Profile_Picture"
+                android:id="@+id/profile_picture" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/profile_add_layer"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    style="@style/Profile_DivisionLinesSmall" />
+                <Button
+                    style="@style/Profile_ButtonNoContent"
+                    android:id="@+id/profile_add_btn"
+                    android:text="Add Contact"
+                    android:gravity="center" />
+                <View
+                    style="@style/Profile_DivisionLinesSmall" />
+            </LinearLayout>
+        <!--Info Label-->
+            <TextView
+                style="@style/Profile_DivisionLabel"
+                android:text="Info" />
+            <View
+                style="@style/Profile_DivisionLines" />
+        <!--Name-->
+            <RelativeLayout
+                style="@style/Profile_ButtonLayer">
+                <TextView
+                    style="@style/Profile_Option"
+                    android:text="@string/ContactProfileName" />
+                <TextView
+                    style="@style/Profile_ButtonContent"
+                    android:id="@+id/profile_name_label" />
+            </RelativeLayout>
+            <View
+                style="@style/Profile_DivisionLinesSmall" />
+        <!--Username-->
+            <RelativeLayout
+                style="@style/Profile_ButtonLayer">
+                <TextView
+                    style="@style/Profile_Option"
+                    android:text="@string/ContactProfileUsername" />
+                <TextView
+                    style="@style/Profile_ButtonContent"
+                    android:id="@+id/profile_username_label" />
+            </RelativeLayout>
+            <View
+                style="@style/Profile_DivisionLinesSmall" />
+        <!--Fingerprint-->
+            <RelativeLayout
+                style="@style/Profile_ButtonLayer">
+                <TextView
+                    style="@style/Profile_Option"
+                    android:text="@string/ContactProfileFingerprint" />
+                <TextView
+                    style="@style/Profile_ButtonContent"
+                    android:id="@+id/profile_fingerprint"
+                    android:layout_width="match_parent"
+                    android:text="teste" />
+            </RelativeLayout>
+            <View
+                style="@style/Profile_DivisionLinesSmall" />
+        <!--Fingerprint Status-->
+            <RelativeLayout
+                style="@style/Profile_ButtonLayer">
+                <TextView
+                    style="@style/Profile_Option"
+                    android:text="Fingerprint Status" />
+                <TextView
+                    style="@style/Profile_ButtonContent"
+                    android:id="@+id/profile_fingerprint_status"
+                    android:layout_width="match_parent"
+                    android:text="teste" />
+            </RelativeLayout>
+            <View
+                style="@style/Profile_DivisionLinesSmall" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

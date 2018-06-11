@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>d798c7a7-7ddd-41b3-9869-329049fd1e00</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ChadderTest</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Account.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BaseTest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Collections.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Database.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Secrets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Crypto.cs" />
+  </ItemGroup>
+</Project>

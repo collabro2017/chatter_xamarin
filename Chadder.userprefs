@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{DCD21BEB-B07C-4A20-9DB1-BDFAD4A28133}|Default" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.ItemProperties.Chadder.Droid AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.Android_Accelerated_x86" AndroidDesignerPreferredTheme="Theme.AppTheme" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Chadder-Android Status">
+    <Files>
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" Line="181" Column="14" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Util/ChadderRequest.cs" Line="100" Column="1" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceDevice.cs" Line="124" Column="53" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSource.cs" Line="41" Column="34" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Util/SignalRConnection.cs" Line="128" Column="1" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceContact.cs" Line="28" Column="1" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceProfile.cs" Line="15" Column="1" />
+      <File FileName="Chadder-core-csharp/Chadder.Client/Source/ChadderSourcePackage.cs" Line="207" Column="1" />
+      <File FileName="Chadder-Android/Chadder.Droid/Adapters/ConversationsAdapter.cs" Line="70" Column="1" />
+      <File FileName="Chadder-Android/Chadder.Droid/Adapters/ChatAdapter.cs" Line="47" Column="81" />
+      <File FileName="Chadder-Android/Chadder.Droid/Views/Base/BaseFragment.cs" Line="67" Column="42" />
+      <File FileName="Chadder-Android Status" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint enabled="false" file="/Users/Admin/Git/Chadder-Android/Chadder-core-csharp/Chadder.Client/Util/ChadderRequest.cs" relfile="Chadder-core-csharp/Chadder.Client/Util/ChadderRequest.cs" line="100" column="63" />
+      <Breakpoint enabled="false" file="/Users/Admin/Git/Chadder-Android/Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" relfile="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" line="162" column="1" />
+      <Breakpoint enabled="false" file="/Users/Admin/Git/Chadder-Android/Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" relfile="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" line="166" column="1" />
+      <Breakpoint enabled="false" file="/Users/Admin/Git/Chadder-Android/Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" relfile="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" line="174" column="1" />
+      <Breakpoint enabled="false" file="/Users/Admin/Git/Chadder-Android/Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" relfile="Chadder-core-csharp/Chadder.Client/Source/ChadderSourceAccount.cs" line="157" column="1" />
+      <Catchpoint enabled="false" exceptionName="System.Exception" includeSubclasses="True" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <DisabledProjects>
+    <String>Chadder-core-csharp/Shared/Shared.shproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.ChadderLib.Droid PreferredExecutionTarget="Android.ZY2237CMKZ" />
+</Properties>
